@@ -68,18 +68,44 @@ main {
     margin: 5px 0;
 }
 
-button {
-    background-color: #3897f0;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+button.edit-profile, button.message {
+    margin-top: 10px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    padding: 8px 16px;
     border-radius: 5px;
     font-size: 1.2em;
+    margin-right: 10px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #2874f0;
+button.edit-profile:hover, button.message:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.stats {
+    display: flex;
+    margin-top: 10px;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.count {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.label {
+    color: #555;
+}
+
+.description {
+    margin-top: 20px;
 }
 
 .posts {
@@ -110,7 +136,6 @@ footer {
     padding: 10px;
     background-color: #f9f9f9;
 }
-
 
 
    
