@@ -111,7 +111,7 @@ button.edit-profile:hover, button.message:hover {
 .posts {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px; /* Lebar maksimum untuk tata letak postingan */
+    max-width: 900px;
     width: 100%;
 }
 
@@ -120,6 +120,7 @@ button.edit-profile:hover, button.message:hover {
     border: 1px solid #ccc;
     max-width: 300px;
     width: 100%;
+    cursor: pointer;
 }
 
 .post img {
@@ -131,11 +132,20 @@ button.edit-profile:hover, button.message:hover {
     padding: 10px;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f9f9f9;
+.comment {
+    display: none;
+    align-items: center;
+    margin: 10px 0;
 }
 
+.comment img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 10px;
+}
 
-   
+.comment-text {
+    font-size: 1em;
+}
