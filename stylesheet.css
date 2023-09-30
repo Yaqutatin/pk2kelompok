@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -96,7 +97,7 @@ button.edit-profile:hover, button.message:hover {
 }
 
 .count {
-    font-size: 1.5em;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -147,5 +148,11 @@ button.edit-profile:hover, button.message:hover {
 }
 
 .comment-text {
-    font-size: 1em;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
 }
