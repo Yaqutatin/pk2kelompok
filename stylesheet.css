@@ -1,158 +1,66 @@
 body {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  margin: 0;
+  font-family: "Arial", sans-serif; /* Ganti font jika diperlukan */
 }
 
-header {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
+.profile-wrapper {
+  padding: 50px 0;
+  text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url(https://example.com/profile.jpg); /* Ganti dengan URL gambar profil Anda */
+  background-size: cover;
+  margin: 0 auto 20px;
 }
 
-nav li {
-    display: inline-block;
-    margin-left: 20px;
+.profile-info h1 {
+  font-size: 24px;
+  margin: 10px 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.profile {
-    margin-right: 40px;
-}
-
-.avatar img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 5px solid #fff;
-}
-
-.info h2 {
-    font-size: 2em;
-    margin: 10px 0;
-}
-
-.info p {
-    font-size: 1.2em;
-    color: #555;
-    margin: 5px 0;
-}
-
-button.edit-profile, button.message {
-    margin-top: 10px;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-button.edit-profile:hover, button.message:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-.stats {
-    display: flex;
-    margin-top: 10px;
-}
-
-.stat {
-    text-align: center;
-    margin: 0 20px;
-}
-
-.count {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.label {
-    color: #555;
-}
-
-.description {
-    margin-top: 20px;
+.profile-info p {
+  font-size: 16px;
+  color: #666;
 }
 
 .posts {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .post {
-    margin: 10px;
-    border: 1px solid #ccc;
-    max-width: 300px;
-    width: 100%;
-    cursor: pointer;
+  margin: 10px;
+  position: relative;
 }
 
 .post img {
-    max-width: 100%;
-    height: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.caption {
-    padding: 10px;
+.footer {
+  text-align: center;
+  padding: 20px 0;
 }
 
-.comment {
-    display: none;
-    align-items: center;
-    margin: 10px 0;
+.footer img {
+  width: 125px;
 }
 
-.comment img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.comment-text {
-    font-size: 14px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f9f9f9;
+.footer p {
+  font-size: 12px;
+  color: #666;
 }
