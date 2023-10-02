@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="header-left">
-                <img class="logo" src="https://w7.pngwing.com/pngs/648/943/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-thumbnail.png">
+                <img class="logo"
+                    src="https://w7.pngwing.com/pngs/648/943/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-thumbnail.png">
             </div>
             <div class="header-right">
                 <a href="#" class="login">Log in</a>
@@ -22,13 +25,34 @@
     <div class="profile-wrapper">
         <div class="container">
             <div class="profile-info">
-                <img class="profile-picture" src="https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg" alt="Profile Picture">
+                <img class="profile-picture"
+                    src="https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg"
+                    alt="Profile Picture">
                 <h1>Pretty Angel</h1>
                 <p>Deskripsi Profil</p>
                 <p>Following: <span id="following-count">0</span></p>
                 <p>Followers: <span id="followers-count">0</span></p>
                 <button onclick="follow()">Follow</button>
                 <button onclick="addFollower()">Add Follower</button>
+
+                <div class="profile-nav">
+                    <button onclick="showPosts()">Posts</button>
+                    <button onclick="showSaved()">Saved</button>
+                    <button onclick="showTagged()">Tagged</button>
+                </div>
+
+                <div class="profile-section" id="posts">
+                    <!-- Your posts go here -->
+                </div>
+
+                <div class="profile-section" id="saved" style="display:none;">
+                    <!-- Saved posts go here -->
+                </div>
+
+                <div class="profile-section" id="tagged" style="display:none;">
+                    <!-- Tagged posts go here -->
+                </div>
+
             </div>
         </div>
     </div>
@@ -36,10 +60,12 @@
     <div class="posts">
         <div class="container">
             <div class="post">
-                <img src="https://i.pinimg.com/564x/55/6b/32/556b3236abac6e18103300faef9af71a.jpg" alt="Post 1">
+                <img src="https://i.pinimg.com/564x/55/6b/32/556b3236abac6e18103300faef9af71a.jpg"
+                    alt="Post 1">
             </div>
             <div class="post">
-                <img src="https://i.pinimg.com/736x/06/a1/07/06a10768498c4b9e02bca318a04bdb6a.jpg" alt="Post 2">
+                <img src="https://i.pinimg.com/736x/06/a1/07/06a10768498c4b9e02bca318a04bdb6a.jpg"
+                    alt="Post 2">
             </div>
             <!-- Tambahkan postingan-postingan lain di sini -->
         </div>
@@ -51,5 +77,49 @@
             <p>Learn to code, learn to be creative.</p>
         </div>
     </footer>
+
+    <script>
+        // Define initial following and followers count
+        let followingCount = 100;
+        let followersCount = 200;
+
+        // Function to update the counts
+        function updateCounts() {
+            document.getElementById('following-count').innerText = followingCount;
+            document.getElementById('followers-count').innerText = followersCount;
+        }
+
+        // Function to increment following count
+        function follow() {
+            followingCount++;
+            updateCounts();
+        }
+
+        // Function to increment followers count
+        function addFollower() {
+            followersCount++;
+            updateCounts();
+        }
+
+        function showPosts() {
+            document.getElementById('posts').style.display = 'block';
+            document.getElementById('saved').style.display = 'none';
+            document.getElementById('tagged').style.display = 'none';
+        }
+
+        function showSaved() {
+            document.getElementById('posts').style.display = 'none';
+            document.getElementById('saved').style.display = 'block';
+            document.getElementById('tagged').style.display = 'none';
+        }
+
+        function showTagged() {
+            document.getElementById('posts').style.display = 'none';
+            document.getElementById('saved').style.display = 'none';
+            document.getElementById('tagged').style.display = 'block';
+        }
+    </script>
+
 </body>
+
 </html>
