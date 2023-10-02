@@ -52,6 +52,41 @@
             color: #666;
         }
 
+        .profile-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .profile-buttons button {
+            margin: 0 5px;
+        }
+
+        .edit-profile,
+        .view-archive {
+            background-color: #3897f0;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .edit-profile:hover,
+        .view-archive:hover {
+            background-color: #3578e5;
+        }
+
+        .edit-profile {
+            margin-right: 10px;
+        }
+
+        .view-archive {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+
         .profile-nav button {
             margin: 5px;
         }
@@ -82,6 +117,12 @@
             margin: 10px;
             position: relative;
             flex: 0 0 200px; /* Set a fixed width for each post */
+        }
+
+        .post img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
         }
 
         .footer {
@@ -124,8 +165,13 @@
                     </div>
                 </div>
                 <p>Deskripsi Profil</p>
-                <button onclick="follow()">Follow</button>
-                <button onclick="addFollower()">Add Follower</button>
+
+                <div class="profile-buttons">
+                    <button onclick="follow()">Follow</button>
+                    <button onclick="addFollower()">Add Follower</button>
+                    <button class="edit-profile">Edit Profile</button>
+                    <button class="view-archive">View Archive</button>
+                </div>
 
                 <div class="profile-nav">
                     <button onclick="showPosts()">Posts</button>
