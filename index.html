@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +7,102 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
-
 <body>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Arial", sans-serif; /* Ganti font jika diperlukan */
+        }
+
+        .container {
+            width: 1170px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .header-left img {
+            width: 50px;
+        }
+
+        .header-right {
+            margin-left: auto;
+        }
+
+        .profile-wrapper {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background-image: url(https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg); /* Ganti dengan URL gambar profil Anda */
+            background-size: cover;
+            margin: 0 auto 20px;
+        }
+
+        .profile-info h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .profile-nav button {
+            margin: 5px;
+        }
+
+        .profile-section {
+            margin-top: 20px;
+        }
+
+        .profile-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .posts .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .posts .post {
+            margin: 10px;
+            position: relative;
+            flex: 0 0 200px; /* Set a fixed width for each post */
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer img {
+            width: 125px;
+        }
+
+        .footer p {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+
     <header>
         <div class="container">
             <div class="header-left">
-                <img class="logo"
-                    src="https://w7.pngwing.com/pngs/648/943/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-thumbnail.png">
+                <img class="logo" src="https://w7.pngwing.com/pngs/648/943/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-thumbnail.png">
             </div>
             <div class="header-right">
                 <a href="#" class="login">Log in</a>
@@ -25,13 +113,17 @@
     <div class="profile-wrapper">
         <div class="container">
             <div class="profile-info">
-                <img class="profile-picture"
-                    src="https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg"
-                    alt="Profile Picture">
-                <h1>Pretty Angel</h1>
+                <div class="profile-pic-and-info">
+                    <img class="profile-picture"
+                        src="https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg"
+                        alt="Profile Picture">
+                    <div class="profile-name-and-counts">
+                        <h1>Pretty Angel</h1>
+                        <p>Following: <span id="following-count">0</span></p>
+                        <p>Followers: <span id="followers-count">0</span></p>
+                    </div>
+                </div>
                 <p>Deskripsi Profil</p>
-                <p>Following: <span id="following-count">0</span></p>
-                <p>Followers: <span id="followers-count">0</span></p>
                 <button onclick="follow()">Follow</button>
                 <button onclick="addFollower()">Add Follower</button>
 
@@ -119,7 +211,5 @@
             document.getElementById('tagged').style.display = 'block';
         }
     </script>
-
 </body>
-
 </html>
