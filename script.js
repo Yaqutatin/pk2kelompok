@@ -1,20 +1,24 @@
-// script.js
+<script>
+    // Define initial following and followers count
+    let followingCount = 100;
+    let followersCount = 200;
 
-// Mengubah nama profil ketika tombol "Edit Profile" ditekan
-document.querySelector('.edit-profile').addEventListener('click', function() {
-    document.querySelector('h2').textContent = "Jane Doe";
-});
+    // Function to update the counts
+    function updateCounts() {
+        document.getElementById('following-count').innerText = followingCount;
+        document.getElementById('followers-count').innerText = followersCount;
+    }
 
-// Mengirim pesan ketika tombol "Message" ditekan
-document.querySelector('.message').addEventListener('click', function() {
-    alert("Pesan berhasil terkirim!");
-});
+    // Function to increment following count
+    function follow() {
+        followingCount++;
+        updateCounts();
+    }
 
-// Menampilkan komentar ketika gambar postingan diklik
-document.querySelectorAll('.post img').forEach(function(image) {
-    image.addEventListener('click', function() {
-        var post = this.closest('.post');
-        var comment = post.querySelector('.comment');
-        comment.style.display = 'block';
-    });
-});
+    // Function to increment followers count
+    function addFollower() {
+        followersCount++;
+        updateCounts();
+    }
+</script>
+
