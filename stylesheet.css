@@ -40,9 +40,16 @@ body {
   margin: 20px 0;
 }
 
-.post {
+.posts .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.posts .post {
   margin: 10px;
   position: relative;
+  flex: 0 0 200px; /* Set a fixed width for each post */
 }
 
 .post img {
