@@ -3,268 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Instagram</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <style>
+    <title>Web Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
         body {
-            margin: 0;
-            font-family: "Arial", sans-serif; /* Ganti font jika diperlukan */
-        }
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
 
-        .container {
-            width: 1170px;
-            padding: 0 15px;
-            margin: 0 auto;
-        }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
 
-        .header-left img {
-            width: 50px;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        .header-right {
-            margin-left: auto;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
 
-        .profile-wrapper {
-            padding: 50px 0;
-            text-align: center;
-        }
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-        .profile-pic-and-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+nav ul li a:hover {
+    color: #ff9900;
+}
 
-        .profile-name-and-counts {
-            margin-right: 20px;
-        }
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        .profile-picture {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            background-image: url(https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg); /* Ganti dengan URL gambar profil Anda */
-            background-size: cover;
-            margin: 0 auto 20px;
-        }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
-        .profile-info h1 {
-            font-size: 24px;
-            margin: 10px 0;
-        }
+table, th, td {
+    border: 1px solid #ccc;
+}
 
-        .profile-info p {
-            font-size: 16px;
-            color: #666;
-        }
+th, td {
+    padding: 10px;
+    text-align: left;
+}
 
-        .profile-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 
-        .profile-buttons button {
-            margin: 0 5px;
-        }
-
-        .edit-profile,
-        .view-archive {
-            background-color: #3897f0;
-            color: #000;
-            border: none;
-            padding: 8px 16px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .edit-profile:hover,
-        .view-archive:hover {
-            background-color: #3578e5;
-        }
-
-        .edit-profile {
-            margin-right: 10px;
-        }
-
-        .view-archive {
-            background-color: #fff;
-            color: #000;
-            border: 1px solid #000;
-        }
-
-        .profile-nav button {
-            margin: 5px;
-        }
-
-        .profile-section {
-            margin-top: 20px;
-        }
-
-        .profile-section img {
-            width: 100%;
-            height: auto;
-        }
-
-        .posts {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        .posts .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .posts .post {
-            margin: 10px;
-            position: relative;
-            flex: 0 0 200px; /* Set a fixed width for each post */
-        }
-
-        .post img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .footer img {
-            width: 125px;
-        }
-
-        .footer p {
-            font-size: 12px;
-            color: #666;
-        }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-left">
-                <img class="logo" src="https://w7.pngwing.com/pngs/648/943/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-thumbnail.png">
-            </div>
-            <div class="header-right">
-                <a href="#" class="login">Log in</a>
-            </div>
-        </div>
+        <h1>Selamat Datang di Web Pribadi Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#pendidikan">PENDIDIKAN</a></li>
+                <li><a href="#jadwal">JADWAL KULIAH</a></li>
+                <li><a href="#aktivitas">AKTIVITAS</a></li>
+                <li><a href="#informasi-tambahan">INFORMASI TAMBAHAN</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="profile-wrapper">
-        <div class="container">
-            <div class="profile-info">
-                <div class="profile-pic-and-info">
-                    <div class="profile-name-and-counts">
-                        <h1>Pretty Angel</h1>
-                        <p>Following: <span id="following-count">0</span></p>
-                        <p>Followers: <span id="followers-count">0</span></p>
-                    </div>
-                    <img class="profile-picture"
-                        src="https://i.pinimg.com/564x/5b/c2/f3/5bc2f344a95d5523bd84168101cd8f48.jpg"
-                        alt="Profile Picture">
-                </div>
-                <p>Deskripsi Profil</p>
+    <section id="home">
+        <h2>Informasi Sekilas</h2>
+        <p>... Isi informasi sekilas tentang diri Anda ...</p>
+    </section>
 
-                <div class="profile-buttons">
-                    <button onclick="follow()">Follow</button>
-                    <button onclick="addFollower()">Add Follower</button>
-                    <button class="edit-profile">Edit Profile</button>
-                    <button class="view-archive">View Archive</button>
-                </div>
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <p>... Isi informasi pendidikan Anda ...</p>
+    </section>
 
-                <div class="profile-nav">
-                    <button onclick="showPosts()">Posts</button>
-                    <button onclick="showSaved()">Saved</button>
-                    <button onclick="showTagged()">Tagged</button>
-                </div>
+    <section id="jadwal">
+        <h2>Jadwal Kuliah</h2>
+        <table>
+            <!-- Tabel dengan CSS akan diimplementasikan di file styles.css -->
+            <tr>
+                <th>Hari</th>
+                <th>Mata Kuliah</th>
+                <th>Waktu</th>
+            </tr>
+            <!-- Isi jadwal kuliah disini -->
+        </table>
+    </section>
 
-                <div class="profile-section" id="posts">
-                    <!-- Your posts go here -->
-                </div>
+    <section id="aktivitas">
+        <h2>Aktivitas</h2>
+        <p>... Isi informasi aktivitas Anda ...</p>
+    </section>
 
-                <div class="profile-section" id="saved" style="display:none;">
-                    <!-- Saved posts go here -->
-                </div>
-
-                <div class="profile-section" id="tagged" style="display:none;">
-                    <!-- Tagged posts go here -->
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="posts">
-        <div class="container">
-            <div class="post">
-                <img src="https://i.pinimg.com/564x/55/6b/32/556b3236abac6e18103300faef9af71a.jpg"
-                    alt="Post 1">
-            </div>
-            <div class="post">
-                <img src="https://i.pinimg.com/736x/06/a1/07/06a10768498c4b9e02bca318a04bdb6a.jpg"
-                    alt="Post 2">
-            </div>
-            <!-- Tambahkan postingan-postingan lain di sini -->
-        </div>
-    </div>
+    <section id="informasi-tambahan">
+        <h2>Informasi Tambahan</h2>
+        <p>... Isi informasi tambahan Anda ...</p>
+    </section>
 
     <footer>
-        <div class="container">
-            <img src="https://example.com/footer_logo.png" alt="Footer Logo">
-            <p>Learn to code, learn to be creative.</p>
-        </div>
+        <p>&copy; 2023 Nama Anda</p>
     </footer>
-
-    <script>
-        // Define initial following and followers count
-        let followingCount = 100;
-        let followersCount = 200;
-
-        // Function to update the counts
-        function updateCounts() {
-            document.getElementById('following-count').innerText = followingCount;
-            document.getElementById('followers-count').innerText = followersCount;
-        }
-
-        // Function to increment following count
-        function follow() {
-            followingCount++;
-            updateCounts();
-        }
-
-        // Function to increment followers count
-        function addFollower() {
-            followersCount++;
-            updateCounts();
-        }
-
-        function showPosts() {
-            document.getElementById('posts').style.display = 'block';
-            document.getElementById('saved').style.display = 'none';
-            document.getElementById('tagged').style.display = 'none';
-        }
-
-        function showSaved() {
-            document.getElementById('posts').style.display = 'none';
-            document.getElementById('saved').style.display = 'block';
-            document.getElementById('tagged').style.display = 'none';
-        }
-
-        function showTagged() {
-            document.getElementById('posts').style.display = 'none';
-            document.getElementById('saved').style.display = 'none';
-            document.getElementById('tagged').style.display = 'block';
-        }
-    </script>
 </body>
 </html>
